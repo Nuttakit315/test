@@ -103,8 +103,8 @@
         $store.state.i12.amount*$store.state.i12.price
       }} บาท </h2>
     <div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-success" type="button" v-on:click="$store.state.say('สั่งซื้อสำเร็จ')">ยืนยันการสั่งซื้อ</button>
-    <button class="btn btn-danger" type="button" onClick="javascript:location.reload();">ยกเลิกการสั่งซื้อ</button>
+    <button class="btn btn-success" v-on:click="$store.state.say('สั่งซื้อสำเร็จ')" onClick="javascript:location.reload();">ยืนยันการสั่งซื้อ</button>
+    <button to="/" class="btn btn-danger" v-on:click="$store.state.say('ยกเลิกสำเร็จ')" onClick="javascript:location.reload();">ยกเลิกการสั่งซื้อ</button>
     </div>
   </div>
 </template>
