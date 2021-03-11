@@ -39,6 +39,7 @@
               </b-form-group>
             </b-col>
           </b-row>
+          <br>
           <b-button variant="success" @click="addData()"> Submit </b-button>
         </b-form>
       </b-card>
@@ -58,7 +59,6 @@ export default {
   },
   methods: {
     addData() {
-      // เก็บข้อมูล Form ใน collection MyForm ( มี 1 document แต่จะ update ข้อมูลเรื่อย ๆ )
       const data = {
         email: this.email,
         name: this.name,
@@ -77,7 +77,12 @@ export default {
           console.error('Error writing document: ', error);
         });
       const dataText = {
+        Email: this.email,
         First_Name: this.name,
+        Last_Name: this.surname,
+        Password: this.pass,
+        Phone: this.phone,
+        Gender: this.gender,
         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       };
       db.collection('MyText')
