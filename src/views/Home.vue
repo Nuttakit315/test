@@ -1,12 +1,5 @@
 <template>
   <div id="Home">
-  <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-body border-bottom shadow-sm">
-  <p class="h3 my-0 me-md-auto fw-normal">MIDORI-SHOP</p>
-  <nav class="my-2 my-md-0 me-md-3">
-  <router-link to="/" class="p-2 text-dark" > SHOP </router-link>
-  </nav>
-  <router-link to="/about" class="btn btn-outline-primary">ตระกร้าสินค้า</router-link>
-  </header>
   <main class="container">
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
